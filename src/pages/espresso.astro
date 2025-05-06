@@ -1,9 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/landing/Hero.astro";
-import Products from "../components/landing/Products.astro";
+import Header from "../components/global/Header.astro";
 
+import ProductDetails from "../components/ProductDetails.astro";
 ---
 
 <BaseLayout>
+
+<Header />
+<ProductDetails
+    title="Espresso"
+    brand="Gourmet Coffee Blend"
+    description="Indulge in the rich and bold flavors of our gourmet espresso blend. Perfectly roasted to deliver a smooth and aromatic experience, this coffee is crafted for true connoisseurs. Enjoy the essence of premium coffee in every sip."
+    imageUrl="https://cdn.dribbble.com/userupload/2739254/file/original-ac8226a7213611e49363fc0176a48cb0.jpg?compress=1&resize=1504x1128"
+    imageAlt="Espresso Coffee Blend"
+    badges={["Gourmet Coffee Collection"]}
+    features={[
+        "Rich and bold flavor",
+        "Expertly roasted beans",
+        "Aromatic and smooth",
+        "Eco-friendly packaging"
+    ]}
+/>
+
 </BaseLayout>
